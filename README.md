@@ -36,15 +36,17 @@ No hardware, drivers, or real-time OS APIs. Everything is self-contained and tes
 **Requirements**  
 - Linux (or WSL on Windows)
 - GCC (C11 support)
+- make
 
 **Build & Run**
-```bash
-gcc -std=c11 -Wall -Wextra -Iinclude -c main.c -o main.o
-gcc -std=c11 -Wall -Wextra -Iinclude -c kernel/kernel.c -o kernel.o
-gcc -std=c11 -Wall -Wextra -Iinclude -c kernel/task.c -o task.o
-gcc main.o kernel.o task.o -o minimal-rtos
-./minimal-rtos
-```
+Build and execute:
+
+make
+make run
+
+Clean build artifacts:
+
+make clean
 
 Change int scenario = 1; in main.c to test different modes (overload, deadline miss, etc.).
 
