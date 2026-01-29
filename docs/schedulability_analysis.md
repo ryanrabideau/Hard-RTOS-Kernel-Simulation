@@ -12,7 +12,7 @@ Measured U ≈ (30/50) + (8/100) + (6/150) = 0.72 (72%)
 
 U < bound → schedulable.
 
-## Worst-Case Response Time (Joseph & Pandya)
+## Worst-Case Response Time
 R1 ≈ WCET1 = 30 ticks  
 R2 ≈ WCET2 + ceiling(R2 / P1) × WCET1 ≈ 8 + 1×30 = 38 ticks  
 R3 ≈ WCET3 + ceiling(R3 / P1) × WCET1 + ceiling(R3 / P2) × WCET2 ≈ 6 + 1×30 + 1×8 = 44 ticks
