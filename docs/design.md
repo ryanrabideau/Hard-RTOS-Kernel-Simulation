@@ -1,7 +1,7 @@
 # Kernel Design Doc
 
 ## What is a Task?
-A task is a small, independent unit of work — a function pointer that runs periodically or on demand. Each has an ID, priority, state, timing parameters, and entry point.
+A task is a small, independent unit of work, which is a function pointer that runs periodically or on demand. Each has an ID, priority, state, timing parameters, and entry point.
 
 ## Task States
 - READY: Eligible to run when scheduler chooses it
