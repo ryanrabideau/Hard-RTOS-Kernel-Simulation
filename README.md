@@ -17,7 +17,7 @@ No hardware, drivers, or real-time OS APIs. Everything is self-contained and tes
 
 - Fixed-priority preemptive scheduling model (Rate Monotonic) implemented via deterministic task state switching
 - Mutexes with priority inheritance (blocks high-prio tasks from inversion)
-- Static task array + per-task 512-byte stacks with canary-based overflow detection
+- Static task array + per-task 512-byte stacks with 0xDEADBEEF canary-based overflow detection
 - Tick-driven time model with simulated context (state machines + yield returns)
 - Deadline monitoring & logging of misses
 - Watchdog for stall/timeout detection
